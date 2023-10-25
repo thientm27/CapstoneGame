@@ -42,6 +42,7 @@ namespace Entry
 				DontDestroyOnLoad(soundObject);
 				// Add Services
 				gameServices.AddService(new AudioService(music, sounds, soundObject));
+				gameServices.AddService(new APIService());
 				gameServices.AddService(new DisplayService());
 				gameServices.AddService(new InputService());
 				gameServices.AddService(new PlayerService());
